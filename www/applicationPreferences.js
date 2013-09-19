@@ -1,4 +1,4 @@
-//cordova.define("com.simonmacdonald.prefs.applicationPreferences", function(require, exports, module) {
+cordova.define("com.appgiraffe.plugins.prefs.applicationPreferences", function(require, exports, module) {//cordova.define("com.simonmacdonald.prefs.applicationPreferences", function(require, exports, module) {
 
 	alert('Made it to here.');
 
@@ -58,3 +58,4 @@
  * window.plugins.applicationPreference =
  * cordova.require("cordova/plugin/applicationpreferences"); }
  */
+});
