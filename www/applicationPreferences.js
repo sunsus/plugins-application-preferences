@@ -1,4 +1,4 @@
-cordova.define("com.appgiraffe.plugins.prefs.applicationPreferences", function(
+cordova.define("com.appgiraffe.plugins.prefs.applicationPreferences", function(require, exports, module) {cordova.define("com.appgiraffe.plugins.prefs.applicationPreferences", function(
 		require, exports, module) {
 
 	var applicationPreferences = {
@@ -35,4 +35,4 @@ cordova.define("com.appgiraffe.plugins.prefs.applicationPreferences", function(
 
 	module.exports = applicationPreferences;
 
-});
+});});
