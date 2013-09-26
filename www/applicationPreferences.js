@@ -1,38 +1,33 @@
-cordova.define("com.appgiraffe.plugins.prefs.applicationPreferences", function(require, exports, module) {cordova.define("com.appgiraffe.plugins.prefs.applicationPreferences", function(
-		require, exports, module) {
+var applicationPreferences = {
 
-	var applicationPreferences = {
+	get : function(key, success, fail) {
+		cordova.exec(success, fail, "applicationPreferences", "get", [ key ]);
+	},
 
-		get : function(key, success, fail) {
-			cordova.exec(success, fail, "applicationPreferences", "get",
-					[ key ]);
-		},
+	set : function(key, value, success, fail) {
+		cordova.exec(success, fail, "applicationPreferences", "set", [ key,
+				value ]);
+	},
 
-		set : function(key, value, success, fail) {
-			cordova.exec(success, fail, "applicationPreferences", "set", [ key,
-					value ]);
-		},
+	load : function(success, fail) {
+		cordova.exec(success, fail, "applicationPreferences", "load", []);
+	},
 
-		load : function(success, fail) {
-			cordova.exec(success, fail, "applicationPreferences", "load", []);
-		},
+	show : function(activity, success, fail) {
+		cordova.exec(success, fail, "applicationPreferences", "show",
+				[ activity ]);
+	},
 
-		show : function(activity, success, fail) {
-			cordova.exec(success, fail, "applicationPreferences", "show",
-					[ activity ]);
-		},
+	clear : function(success, fail) {
+		cordova.exec(success, fail, "applicationPreferences", "clear", []);
+	},
 
-		clear : function(success, fail) {
-			cordova.exec(success, fail, "applicationPreferences", "clear", []);
-		},
+	remove : function(keyToRemove, success, fail) {
+		cordova.exec(success, fail, "applicationPreferences", "remove",
+				[ keyToRemove ]);
+	}
 
-		remove : function(keyToRemove, success, fail) {
-			cordova.exec(success, fail, "applicationPreferences", "remove",
-					[ keyToRemove ]);
-		}
+}
+// applicationPreferences
 
-	} // applicationPreferences
-
-	module.exports = applicationPreferences;
-
-});});
+module.exports = applicationPreferences;
