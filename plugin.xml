@@ -10,7 +10,7 @@
 
 
     <js-module src="www/applicationPreferences.js" name="applicationPreferences">
-        <clobbers target="window.applicationPreferences" />
+        <clobbers target="window.appgiraffe.plugins.applicationPreferences" />
     </js-module>
 
     <!-- android -->
