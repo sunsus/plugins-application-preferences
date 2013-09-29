@@ -21,6 +21,6 @@
             </feature>
         </config-file>
 
-        <source-file src="src/android/applicationPreferences.java" target-dir="src/com/appgiraffe/plugins.applicationPreferences" />      
+        <source-file src="src/android/applicationPreferences.java" target-dir="src/com/appgiraffe/plugins/applicationPreferences" />      
      </platform>          
 </plugin>
