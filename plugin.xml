@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-           id="com.appgiraffe.plugins"
+           id="com.appgiraffe.plugins.applicationPreferences"
       version="0.1.0">
     <name>ApplicationPreferences</name>
     <description>Application Preferences</description>
