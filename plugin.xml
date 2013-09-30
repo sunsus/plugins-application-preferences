@@ -17,10 +17,10 @@
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="applicationPreferences">
-                <param name="android-package" value="com.appgiraffe.plugins.applicationPreferences"/>
+                <param name="android-package" value="com.appgiraffe.plugins.preferences.applicationPreferences"/>
             </feature>
         </config-file>
 
-        <source-file src="src/android/applicationPreferences.java" target-dir="src/com/appgiraffe/plugins/applicationPreferences" />      
+        <source-file src="src/android/applicationPreferences.java" target-dir="src/com/appgiraffe/plugins/preferences" />      
      </platform>          
 </plugin>
