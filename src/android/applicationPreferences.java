@@ -1,4 +1,4 @@
-package com.appgiraffe.plugins.prefs;
+package com.appgiraffe.plugins.applicationPreferences;
 
 import java.util.Iterator;
 import java.util.Map;
