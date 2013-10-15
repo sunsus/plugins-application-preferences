@@ -31,8 +31,8 @@
 			    <param name="onload" value="true"/>
 		    </feature>
         </config-file>
-	    <header-file src="src/ios/applicationPreferences.h" />
-	    <source-file src="src/ios/applicationPreferences.m" />
+	    <header-file src="src/ios/AGApplicationPreferences.h" />
+	    <source-file src="src/ios/AGApplicationPreferences.m" />
     </platform>
 
 </plugin>

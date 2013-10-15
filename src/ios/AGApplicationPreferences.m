@@ -1,16 +1,15 @@
 //
-//  applicationPreferences.m
-//  
+// AppGiraffe Phonegap-Plugin Copyright (c) 2013 AppGiraffe, LLC
 //
-//  Created by Tue Topholm on 31/01/11.
-//  Copyright 2011 Sugee. All rights reserved.
+// AGApplicationPreferences
 //
-// THIS HAVEN'T BEEN TESTED WITH CHILD PANELS YET.
+// Author:  Dave Ferrell
+// Version: 3.0.1
+//
+#import "AGApplicationPreferences.h"
 
-#import "applicationPreferences.h"
 
-
-@implementation applicationPreferences
+@implementation AGApplicationPreferences
 
 
 

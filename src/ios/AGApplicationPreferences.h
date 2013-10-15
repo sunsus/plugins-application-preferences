@@ -1,16 +1,16 @@
 //
-//  applicationPreferences.h
-//  
+// AppGiraffe Phonegap-Plugin Copyright (c) 2013 AppGiraffe, LLC
 //
-//  Created by Tue Topholm on 31/01/11.
-//  Copyright 2011 Sugee. All rights reserved.
+// AGApplicationPreferences
 //
-
+// Author:  Dave Ferrell
+// Version: 3.0.1
+//
 #import <Foundation/Foundation.h>
 
 #import <Cordova/CDVPlugin.h>
 
-@interface applicationPreferences : CDVPlugin 
+@interface AGApplicationPreferences : CDVPlugin 
 {
 
 }
