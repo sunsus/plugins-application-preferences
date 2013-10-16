@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-           id="com.appgiraffe.plugins.preferences"
+           id="com.appgiraffe.plugins.applicationPreferences"
       version="0.1.0">
     <name>ApplicationPreferences</name>
     <description>Application Preferences</description>
@@ -10,17 +10,17 @@
 
 
     <js-module src="www/applicationPreferences.js" name="applicationPreferences">
-        <clobbers target="window.appgiraffe.plugins.applicationPreferences" />
+        <clobbers target="appgiraffe.plugins.applicationPreferences" />
     </js-module>
 
     <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="applicationPreferences">
-                <param name="android-package" value="com.appgiraffe.plugins.preferences.applicationPreferences"/>
+                <param name="android-package" value="com.appgiraffe.plugins.applicationPreferences"/>
             </feature>
         </config-file>
-        <source-file src="src/android/applicationPreferences.java" target-dir="src/com/appgiraffe/plugins/preferences" />      
+        <source-file src="src/android/applicationPreferences.java" target-dir="src/com/appgiraffe/plugins/applicationPreferences" />      
      </platform>          
      
      <!-- ios -->
