@@ -27,7 +27,7 @@
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
 		    <feature name="applicationPreferences">
-			    <param name="ios-package" value="AGPApplicationPreferences"/>
+			    <param name="ios-package" value="AGApplicationPreferences"/>
 			    <param name="onload" value="true"/>
 		    </feature>
         </config-file>
