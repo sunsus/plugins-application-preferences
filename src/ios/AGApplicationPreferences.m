@@ -75,6 +75,26 @@
         [self writeJavascript:jsString]; //Write back to JS
     }
 }
+
+
+- (void)showSetting {
+    @try 
+    {
+		if (&UIApplicationOpenSettingsURLString != NULL) {
+			NSURL *appSettings = [NSURL URLWithString:UIApplicationOpenSettingsURLString];
+			[[UIApplication sharedApplication] openURL:appSettings];
+		}
+	@catch (NSException * e) 
+    {
+        result = [CDVPluginResult resultWithStatus:CDVCommandStatus_NO_RESULT messageAsString:[e reason]];
+        jsString = [result toErrorCallbackString:callbackID];
+    }
+    @finally 
+    {
+        [self writeJavascript:jsString]; //Write back to JS
+    }
+} 
+
 /*
   Parsing the Root.plist for the key, because there is a bug/feature in Settings.bundle
   So if the user haven't entered the Settings for the app, the default values aren't accessible through NSUserDefaults.
