@@ -17,7 +17,7 @@
 
 -	(void) getSetting:(NSMutableArray*)arguments withDict:(NSMutableDictionary*)options;
 -	(void) setSetting:(NSMutableArray*)arguments withDict:(NSMutableDictionary*)options;
+- (void)showSetting;
 -	(NSString*) getSettingFromBundle:(NSString*)settingName;
-
 
 @end
